@@ -55,7 +55,7 @@
     
     function addProjectFailed(data, status) {
       vm.hasError = true;
-      if(status === 400 && vm0.projectName !== '' && vm0.projectName.length < 4) {
+      if(status === 400 && vm0.projectName !== '' && vm0.projectName.length < 2) {
         vm.errorMessage = 'project_name_is_too_short';
       }
       if(status === 400 && vm0.projectName.length > 30) {
